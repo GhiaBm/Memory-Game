@@ -114,7 +114,7 @@ function displayTime(){
     const timer = setInterval(() => { // plays this until we close the tab or we call clearInterval()
 
         if(seconds == 0){
-            seconds = 90;
+            seconds = 30;
         } 
         seconds--;
 
