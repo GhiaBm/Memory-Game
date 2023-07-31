@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Memory Game</title>
+            <link rel="stylesheet" href="./styles.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        </head>
+        <body>       
+            <div class="game">
+                <header class="header">
+                    <h1>Memory Game</h1>
+                    <div class="header_infos">
+                        <p id="highscore"></p>
+                        <p class="header_infos_timer">
+                            <span id="timerRef"> 00 : 30</span>
+                        </p>
+                    </div>
+                </header>
+                <main class="main">
+                    <div class="main_end overlay">
+                        <div class="main_end_content">
+                            <p>Game Over</p>
+                            <button id="btn_restart" class="btn">Restart</button>
+                        </div>
+                    </div>
+                    <div class="main_start overlay">
+                        <form class="form">
+                            <div class="form_content">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" maxlength="15" title="Entrez votre nom">
+                            </div>
+                            <span id="input_infos"></span>           
+                            <button type="submit" id="btn_start" class="btn">Play</button>
+                        </form>
+                    </div>
+                    <div class="main_container_card" data="peakingCat">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="1.jpeg" alt="peakingCat">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="peakingCat">
+                    <div class="card">
+                        <div class="card_front">
+                            <img src="1.jpeg" alt="peakingCat">
+                        </div>
+                        <div class="card_back"></div>
+                    </div>
+                </div>
+                  <div class="main_container_card" data="cake">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="2.jpeg" alt="cake">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="main_container_card" data="cake">
+                    <div class="card">
+                        <div class="card_front">
+                            <img src="2.jpeg" alt="cake">
+                        </div>
+                        <div class="card_back"></div>
+                    </div>
+                </div>
+                <div class="main_container_card" data="17thBD">
+                  <div class="card">
+                      <div class="card_front">
+                          <img src="3.jpeg" alt="17thBD">
+                      </div>
+                      <div class="card_back"></div>
+                  </div>
+              </div>
+                  <div class="main_container_card" data="17thBD">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="3.jpeg" alt="17thBD">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="fishtank">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="4.jpeg" alt="fishtank">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  
+                  <div class="main_container_card" data="fishtank">
+                    <div class="card">
+                        <div class="card_front">
+                            <img src="4.jpeg" alt="fishtank">
+                        </div>
+                        <div class="card_back"></div>
+                    </div>
+                </div>
+                  <div class="main_container_card" data="washedcat" >
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="5.png" alt="washedcat">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="washedcat" >
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="5.png" alt="washedcat">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="skate">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="6.jpeg" alt="skate">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="skate">
+                      <div class="card">
+                          <div class="card_front">
+                              <img src="6.jpeg" alt="skate">
+                          </div>
+                          <div class="card_back"></div>
+                      </div>
+                  </div>
+                  <div class="main_container_card" data="drown">
+                    <div class="card">
+                        <div class="card_front">
+                            <img src="7.jpeg" alt="drown">
+                        </div>
+                        <div class="card_back"></div>
+                    </div>
+                </div>
+                
+                <div class="main_container_card" data="drown">
+                  <div class="card">
+                      <div class="card_front">
+                          <img src="7.jpeg" alt="drown">
+                      </div>
+                      <div class="card_back"></div>
+                  </div>
+              </div>
+              <div class="main_container_card" data="tachigrafo">
+                <div class="card">
+                    <div class="card_front">
+                        <img src="8.jpeg" alt="tachigrafo">
+                    </div>
+                    <div class="card_back"></div>
+                </div>
+            </div>
+                <div class="main_container_card" data="tachigrafo">
+                  <div class="card">
+                      <div class="card_front">
+                          <img src="8.jpeg" alt="tachigrafo">
+                      </div>
+                      <div class="card_back"></div>
+                  </div>
+              </div>
+                </main>
+            </div>
+            <script src="scripts.js"></script>
+        </body>
+    </html>
