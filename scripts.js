@@ -15,7 +15,8 @@ let lockCard = false;
 
 let currentPlayer = {
     name : '',
-    time : ''
+    time : '',
+    grades: ''
 };
 
 // CONNECTION
@@ -137,11 +138,11 @@ function GameOver(timer){
     if(seconds <= 0 || cardNumber === allCard.length){
 
         currentPlayer.time = timerRef.innerHTML;
-
+currentPlayer.grades = cardNumber/2;
         storageManagement();
 
         clearInterval(timer); // clearInterval clears the time back to the original
-        alert("Your score is: " + currentPlayer.time + "  " +  currentPlayer.name) // current score
+        alert("Your score is: " + currentPlayer.time + "  " +  currentPlayer.name + "your score at the moment: " + currentPlayer.grades) // current score
         setTimeout(() => {
             document.querySelector('.main_end').classList.add('showOverlay');
         }, 200);
